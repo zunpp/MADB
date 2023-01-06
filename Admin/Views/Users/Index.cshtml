@@ -1,0 +1,113 @@
+﻿<style>
+    .isDisabled {
+        color: currentColor;
+        cursor: not-allowed;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+</style>
+<div class="modal-body">
+    <div class="box box-default">
+        <div class="box-header with-border">
+
+            <div class="box-body">
+                <div class="table-responsive">
+                    <div class="" id="divGrid">
+                        <table class="table table-bordered table-striped dataTable" style="cursor: pointer;" role="grid" aria-describedby="Comment List" id="tbUserTable">
+                            <thead>
+                                <tr class="bg-blue-active">
+
+
+                                    <th width="40%">
+                                        UserName
+                                    </th>
+                                    <th width="100px">
+                                        Password
+                                    </th>
+
+                                    <th width="100%">
+                                        Role
+                                    </th>
+
+
+
+
+                                </tr>
+                            </thead>
+
+                            <tbody id="tbUserList">
+                                <tr><td colspan="4">No Data to show!</td></tr>
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            debugger;
+            var vMUserGet={
+                "UserPkid":1,
+                "UserName": "",
+                "Password": "",
+                "Role":"",
+                "StateDivisionId":0,
+                "CreatedDate": null,
+                "TownshipId": 0,
+                "Status": ""
+        };
+            console.log("Object", vMUserGet);
+            $.ajax({
+
+                url: 'http://localhost:52136/api/v1/users',
+                type: 'GET',
+                //4.
+                data: {
+                    vMUserGet: vMUserGet
+                },
+                ContentType: 'application/json;utf-8',
+                datatype: 'json',
+                success: function (lst) {
+                    console.log(lst.userResult);
+                    var html = "";
+                    debugger;
+                    $('#tbUserList').html('');
+                    var DataInput = '';
+                    var tmpDocDispatch = '';
+                    var tmpDateDoc = '';
+
+                    console.log("length", lst.userResult.length);
+
+                    for (let i = 0; i < lst.userResult.length; i++) {
+
+
+                        html += ` <tr>
+
+                                     <td>${lst.userResult[i].userName}</td>
+                                     <td>${lst.userResult[i].password} MMK</td>
+                                     <td>${lst.userResult[i].role}</td>
+                                     </tr>`;
+
+                    };
+
+
+
+                    $('#tbUserList').html(html);
+
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+                }
+
+            }).done(function (data) { });
+        });
+
+    </script>
+
+}

@@ -1,0 +1,17 @@
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Services.dll
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Services.pdb
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.csproj.AssemblyReference.cache
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.dll
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.pdb
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Common.dll
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Model.dll
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Common.pdb
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Model.pdb
+D:\ZPP\MADB\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Data.dll
+D:\ZPP\MADB\Services\bin\Debug\netcoreapp3.1\Data.pdb
