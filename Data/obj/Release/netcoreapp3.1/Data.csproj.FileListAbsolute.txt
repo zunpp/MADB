@@ -1,0 +1,13 @@
+D:\ZPP\MADB\Data\bin\Release\netcoreapp3.1\Data.deps.json
+D:\ZPP\MADB\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.json
+D:\ZPP\MADB\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\ZPP\MADB\Data\bin\Release\netcoreapp3.1\Data.dll
+D:\ZPP\MADB\Data\bin\Release\netcoreapp3.1\Data.pdb
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfo.cs
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.dll
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.pdb
+D:\ZPP\MADB\Data\obj\Release\netcoreapp3.1\Data.genruntimeconfig.cache

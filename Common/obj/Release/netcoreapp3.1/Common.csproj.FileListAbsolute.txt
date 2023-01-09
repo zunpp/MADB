@@ -1,0 +1,10 @@
+D:\ZPP\MADB\Common\bin\Release\netcoreapp3.1\Common.deps.json
+D:\ZPP\MADB\Common\bin\Release\netcoreapp3.1\Common.dll
+D:\ZPP\MADB\Common\bin\Release\netcoreapp3.1\Common.pdb
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.AssemblyInfo.cs
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.dll
+D:\ZPP\MADB\Common\obj\Release\netcoreapp3.1\Common.pdb
