@@ -56,6 +56,10 @@ namespace MADB_API
             services.AddMvc(); 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<Services.Base.IUserServices, Services.UserServices>();
+            services.AddTransient<Services.Base.IPersonalInformationServices, Services.PersonalInformationServices>();
+            services.AddTransient<Services.Base.IPersonalAllStateServices, Services.PersonalAllStateServices>();
+            services.AddTransient<Services.Base.ILoanServices, Services.LoanServices>();
+
             services.Configure<Services.Options.ConnectionStrings>(Configuration.GetSection(nameof(Services.Options.ConnectionStrings)));
             services.AddCors(options =>
             {

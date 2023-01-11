@@ -55,53 +55,42 @@
     <script>
         $(document).ready(function () {
             debugger;
-            var vMUserGet={
-                "UserPkid":1,
-                "UserName": "",
-                "Password": "",
-                "Role":"",
-                "StateDivisionId":0,
-                "CreatedDate": null,
-                "TownshipId": 0,
-                "Status": ""
-        };
-            console.log("Object", vMUserGet);
+
             $.ajax({
 
-                url: 'http://103.80.38.75:90/api/v1/users',
+                url: 'http://localhost:52136/api/v1/PersonalInformation',
                 type: 'GET',
-                //4.
                 data: {
-                    vMUserGet: vMUserGet
+                    SearchItem: "", AccountStatus: "စာရင်းရှင်",PageIndex:1
                 },
                 ContentType: 'application/json;utf-8',
                 datatype: 'json',
                 success: function (lst) {
-                    console.log(lst.userResult);
+                    
                     var html = "";
                     debugger;
-                    $('#tbUserList').html('');
-                    var DataInput = '';
-                    var tmpDocDispatch = '';
-                    var tmpDateDoc = '';
+                    //$('#tbUserList').html('');
+                    //var DataInput = '';
+                    //var tmpDocDispatch = '';
+                    //var tmpDateDoc = '';
 
-                    console.log("length", lst.userResult.length);
+                    //console.log("length", lst.userResult.length);
 
-                    for (let i = 0; i < lst.userResult.length; i++) {
-
-
-                        html += ` <tr>
-
-                                     <td>${lst.userResult[i].userName}</td>
-                                     <td>${lst.userResult[i].password} MMK</td>
-                                     <td>${lst.userResult[i].role}</td>
-                                     </tr>`;
-
-                    };
+                    //for (let i = 0; i < lst.userResult.length; i++) {
 
 
+                    //    html += ` <tr>
 
-                    $('#tbUserList').html(html);
+                    //                 <td>${lst.userResult[i].userName}</td>
+                    //                 <td>${lst.userResult[i].password} MMK</td>
+                    //                 <td>${lst.userResult[i].role}</td>
+                    //                 </tr>`;
+
+                    //};
+
+
+
+                    //$('#tbUserList').html(html);
 
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {

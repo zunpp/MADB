@@ -15,8 +15,8 @@ namespace Services.SqlDataAccess
         int skipCount = 0;
         public void SetPageSizeNSkipCount(BaseModel baseModel)
         {
-            pageSize = baseModel.pageSize == 0 ? SystemConstants.DEFAULT_PAGE_COUNT : baseModel.pageSize;
-            skipCount = baseModel.pageNo == 0 ? 0 : baseModel.pageNo * pageSize;
+            pageSize = SystemConstants.DEFAULT_PAGE_COUNT;// baseModel.pageSize == 0 ? SystemConstants.DEFAULT_PAGE_COUNT : baseModel.pageSize;
+            skipCount = 0;// baseModel.pageNo == 0 ? 0 : baseModel.pageNo * pageSize;
         }
         public dynamic GetUser(IDbCommand cmd,UserRequestModel requestModel)
         {
@@ -28,7 +28,7 @@ namespace Services.SqlDataAccess
 
             cmd.AddParameter("@pageSize", pageSize);
             cmd.AddParameter("@pageNo", skipCount);
-            cmd.AddParameter("@orderBy", requestModel.orderBy?.Replace('$', ' ') ?? "UserPkid desc");
+            //cmd.AddParameter("@orderBy", requestModel.orderBy?.Replace('$', ' ') ?? "UserPkid desc");
 
 
             IDbDataParameter cmdTotalCount = cmd.CreateParameter();

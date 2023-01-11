@@ -6,7 +6,7 @@ namespace Common.Constants
 {
     public class SystemConstants
     {
-        public const int DEFAULT_PAGE_COUNT = 10;
+        public const int DEFAULT_PAGE_COUNT = 50;
 
         public const string DEFAULT_ERROR_MSG = "Sorry, something went wrong!";
       
